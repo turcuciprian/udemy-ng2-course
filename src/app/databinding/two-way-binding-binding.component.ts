@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'fa-two-way-data-binding',
   template: `
   <p>{{person.name}}</p>
-    <input type="text" [(ngModel)]="person.name" [value]="person.name" />
+    <input type="text" [(ngModel)]="person.name" />
   `,
   styles: []
 })
