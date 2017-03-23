@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindingComponent{
   stringInterpolation = 'this is string interpolation';
   numberInterpolation = 2;
+  onTest(){
+    return true;
+  }
   onClicked(value: string){
     alert(value);
 
