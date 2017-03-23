@@ -22,21 +22,32 @@ export class LifecycleComponent implements OnInit, OnChanges, DoCheck, AfterCont
   constructor() { }
 
   ngOnInit() {
+    this.log('ngOnInit');
   }
 
-  OnChanges() {
+  ngOnChanges() {
+    this.log('OnChanges');
   }
-  DoCheck() {
+  ngDoCheck() {
+    this.log('DoCheck');
   }
-  AfterContentInit() {
+  ngAfterContentInit() {
+    this.log('AfterContentInit');
   }
-  AfterContentChecked() {
+  ngAfterContentChecked() {
+    this.log('AfterContentChecked');
   }
-  AfterViewInit() {
+  ngAfterViewInit() {
+    this.log('AfterViewInit');
   }
-  AfterViewChecked() {
+  ngAfterViewChecked() {
+    this.log('AfterViewChecked');
   }
-  OnDestroy() {
+  ngOnDestroy() {
+    this.log('OnDestroy');
+  }
+  private log(hook:string){
+    console.log(hook);
   }
 
 }
