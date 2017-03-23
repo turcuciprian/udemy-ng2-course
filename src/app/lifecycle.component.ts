@@ -24,4 +24,19 @@ export class LifecycleComponent implements OnInit, OnChanges, DoCheck, AfterCont
   ngOnInit() {
   }
 
+  OnChanges() {
+  }
+  DoCheck() {
+  }
+  AfterContentInit() {
+  }
+  AfterContentChecked() {
+  }
+  AfterViewInit() {
+  }
+  AfterViewChecked() {
+  }
+  OnDestroy() {
+  }
+
 }
